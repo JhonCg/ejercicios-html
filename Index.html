@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Html 1</title>
+</head>
+<body>
+    <form action="/enpoint" method="post">
+        <fieldset>
+            <legend>Formulario</legend>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Pepito" required>
+            </div>
+            <div>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" placeholder="Grillo" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="ejemplo@gmail.com" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required pattern="[A-Za-z0-9]+" title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 40">
+            </div>
+            <div>
+                <label for="fechanaciemiento">Fecha de nacimiento:</label>
+                <input type="date" id="fechanaciemiento" required>
+            </div>
+            <div>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" min="18" max="99" required>
+            </div>
+            <div>
+                <p>Idiomas</p>
+                <input type="checkbox" id="ingles" name="idiomas" required>
+                <label for="ingles">Ingles</label>
+                <input type="checkbox" id="esp" name="idiomas" required>
+                <label for="esp">Español</label>
+            </div>
+            <div>
+                <p>Genero</p>
+                <input type="radio" id="mujer" value="M" name="genero" required>
+                <label for="mujer">Mujer</label>
+                <input type="radio" id="hombre" value="H" name="genero" required>
+                <label for="hombre">Hombre</label>
+            </div>
+            <div>
+                <label for="Comentarios">Comentarios</label>
+                <textarea name="Comentarios" id="Comentarios" cols="30" rows="5"></textarea>
+            </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+
+    </form>
+    <header>
+        <h1>Hola mi gente!</h1>
+    </header>
+    
+    <nav><a href="https://www.google.com/">Enlace a Google</a>
+    </nav>
+    <article>
+        <section>
+            <div>
+            <h1>Articulo 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam obcaecati totam expedita tempora, quo eum dolores vero enim explicabo quidem necessitatibus adipisci pariatur alias? Eius eos omnis ab illum velit!</p>
+            <img src="http://placekitten.com/400/400" alt="imagenes de gatos">
+            </div>
+        </section>
+    </article>
+    <article>
+        <p>Lista ordenada</p>
+        <ol>
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+        </ol>
+        <p>Lista desordenada</p>
+        <ul>
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+        </ul>
+    </article>
+    <article>
+        <div>
+            <h2>Otro titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia ipsum quis quam animi eaque pariatur laboriosam. Animi voluptates officiis fugit laboriosam, in dignissimos possimus sapiente consectetur laudantium nobis illum?</p>
+            <span class="etiqueta">span 1</span>
+            <span class="etiqueta">span 2</span>
+     </div>
+    </article>
+    <aside>Informacion extra</aside>
+    <footer>Copyright</footer>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ninten switch</td>
+                <td>HAC-001</td>
+                <td>Rojo Neon</td>
+            </tr>
+            <tr>
+                <td>Play station 5</td>
+                <td>AW-XM501</td>
+                <td>Nova pink</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
